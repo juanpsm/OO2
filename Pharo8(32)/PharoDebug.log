@@ -1,0 +1,1048 @@
+THERE_BE_DRAGONS_HERE
+#WAComponent is missing, and does not understand #subclass:instanceVariableNames:classVariableNames:package:
+27 March 2020 11:33:07.02133 pm
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter * VMMaker-CompatibleUserName.1577968628 uuid: d729bf66-2ea7-5a6d-b1eb-fc005785636d Jan  3 2020
+StackToRegisterMappingCogit * VMMaker-CompatibleUserName.1577968628 uuid: d729bf66-2ea7-5a6d-b1eb-fc005785636d Jan  3 2020
+VM: 201911290039-dev-7 admin@MacBook-Pro-de-admin.local:dev/Pharo/git-repos/pharo-vm/repo Date: Thu Nov 28 21:39:57 2019 CommitHash: 9b6bd16d3 Plugins: 201911290039-dev-7 admin@MacBook-Pro-de-admin.local:dev/Pharo/git-repos/pharo-vm/repo
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1134.sha.5173b0271894727189f261cb9eb9beaa3db3f205 (32 Bit)]
+
+UndefinedObject>>doesNotUnderstand: #subclass:instanceVariableNames:classVariableNames:package:
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	subclass: #HelloWorldComponent instanceVariableNames: 'number' classV...etc...
+		exception: 	VariableNotDeclared: receiver of "subclass:instanceVariableNames:cla...etc...
+		resumeValue: 	nil
+		node: 	RBVariableNode(WAComponent
+	Receiver's instance variables: 
+nil
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ WAComponent
+		subclass: #HelloWorldComponent
+		instanceVariableNam...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+DoItChunk>>importFor:logSource:
+	Receiver: a DoItChunk(WAComponent subclass: #HelloWorldComponent
+	instanceVariableNames: 'number'
+	c...etc...
+	Arguments and temporary variables: 
+		requestor: 	a FileCompilerRequestor
+		logSource: 	tru
+	Receiver's instance variables: 
+		contents: 	'WAComponent subclass: #HelloWorldComponent
+	instanceVariableNames: '...etc...
+
+
+[ :declaration | 
+requestor ifNotNil: [ requestor contents: declaration contents ].
+value := declaration importFor: requestor logSource: logSource ] in CodeImporter>>evaluate
+	Receiver: a CodeImporter
+	Arguments and temporary variables: 
+		value: 	nil
+		declaration: 	a DoItChunk(WAComponent subclass: #HelloWorldComponent
+	instanceVa...etc..
+	Receiver's instance variables: 
+		readStream: 	MultiByteFileStream: 'C:\ph\64\OO2-HelloWorld.st'
+		codeDeclarations: 	an OrderedCollection(a DoItChunk(WAComponent subclass: #Hello...etc...
+		parserClass: 	ChunkFileFormatParser
+		requestor: 	a FileCompilerRequestor
+		logSource: 	true
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(a DoItChunk(WAComponent subclass: #HelloWorldComponent
+	instanceVaria...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :declaration | 
+requestor ifNotNil: [ requestor contents: declaration...etc...
+		index: 	
+	Receiver's instance variables: 
+		array: 	an Array(a DoItChunk(WAComponent subclass: #HelloWorldComponent
+	instanc...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+CodeImporter>>evaluate
+	Receiver: a CodeImporter
+	Arguments and temporary variables: 
+		value: 	ni
+	Receiver's instance variables: 
+		readStream: 	MultiByteFileStream: 'C:\ph\64\OO2-HelloWorld.st'
+		codeDeclarations: 	an OrderedCollection(a DoItChunk(WAComponent subclass: #Hello...etc...
+		parserClass: 	ChunkFileFormatParser
+		requestor: 	a FileCompilerRequestor
+		logSource: 	true
+
+
+CodeImporter>>evaluateDeclarations
+	Receiver: a CodeImporter
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		readStream: 	MultiByteFileStream: 'C:\ph\64\OO2-HelloWorld.st'
+		codeDeclarations: 	an OrderedCollection(a DoItChunk(WAComponent subclass: #Hello...etc...
+		parserClass: 	ChunkFileFormatParser
+		requestor: 	a FileCompilerRequestor
+		logSource: 	true
+
+
+CodeImporter class>>evaluateFileStream:
+	Receiver: CodeImporter
+	Arguments and temporary variables: 
+		aFileStream: 	MultiByteFileStream: 'C:\ph\64\OO2-HelloWorld.st
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#codeDeclarations->CodeImporter>>#codeDeclaratio...etc...
+		format: 	65541
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CodeImporter
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'CodeImport-Base'
+
+
+MultiByteFileStream(FileStream)>>fileIn
+	Receiver: MultiByteFileStream: 'C:\ph\64\OO2-HelloWorld.st'
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+
+
+
+FileStream class>>fileIn:
+	Receiver: FileStream
+	Arguments and temporary variables: 
+		fullName: 	'C:\ph\64\OO2-HelloWorld.st'
+		ff: 	MultiByteFileStream: 'C:\ph\64\OO2-HelloWorld.st'
+		fn: 	'C:\ph\64\OO2-HelloWorld.st
+	Receiver's instance variables: 
+		superclass: 	ReadWriteStream
+		methodDict: 	a MethodDictionary(#asBinaryOrTextStream->FileStream>>#asBinaryOrTe...etc...
+		format: 	65540
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{StandardFileStream}
+		name: 	#FileStream
+		classPool: 	a Dictionary(#Stderr->nil #Stdin->nil #StdioFiles->nil #Stdout->nil ...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'DeprecatedFileStream-Base'
+
+
+SimpleServiceEntry>>performServiceFor:
+	Receiver: SimpleServiceEntry: (FileStream --- #fileIn:)
+	Arguments and temporary variables: 
+		anObject: 	File @ C:\ph\64\OO2-HelloWorld.s
+	Receiver's instance variables: 
+		dependents: 	nil
+		announcer: 	nil
+		provider: 	FileStream
+		label: 	'FileIn entire file'
+		selector: 	#fileIn:
+		usingLineAfter: 	true
+		stateSelector: 	#none
+		description: 	'File in the entire contents of the file, which is expected to con...etc...
+		argumentGetter: 	nil
+		buttonLabel: 	'Filein'
+
+
+[ :stream | theOne performServiceFor: aFileReference ] in ExternalDropHandler class>>lookupServiceBasedHandler:
+	Receiver: ExternalDropHandler
+	Arguments and temporary variables: 
+		aFileReference: 	File @ C:\ph\64\OO2-HelloWorld.st
+		services: 	nil
+		theOne: 	SimpleServiceEntry: (FileStream --- #fileIn:)
+		stream: 	File @ C:\ph\64\OO2-HelloWorld.s
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#extension->ExternalDropHandler>>#extension #han...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#ExternalDropHandler
+		classPool: 	a Dictionary(#DefaultHandler->a DefaultExternalDropHandler #Register...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+
+
+BlockClosure>>cull:
+	Receiver: [ :stream | theOne performServiceFor: aFileReference ]
+	Arguments and temporary variables: 
+		anArg: 	File @ C:\ph\64\OO2-HelloWorld.s
+	Receiver's instance variables: 
+		outerContext: 	ExternalDropHandler class>>lookupServiceBasedHandler:
+		startpc: 	114
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:
+	Receiver: [ :stream | theOne performServiceFor: aFileReference ]
+	Arguments and temporary variables: 
+		firstArg: 	File @ C:\ph\64\OO2-HelloWorld.st
+		secondArg: 	a WorldMorph(691814656) [world
+	Receiver's instance variables: 
+		outerContext: 	ExternalDropHandler class>>lookupServiceBasedHandler:
+		startpc: 	114
+		numArgs: 	1
+
+
+BlockClosure>>cull:cull:cull:
+	Receiver: [ :stream | theOne performServiceFor: aFileReference ]
+	Arguments and temporary variables: 
+		firstArg: 	File @ C:\ph\64\OO2-HelloWorld.st
+		secondArg: 	a WorldMorph(691814656) [world]
+		thirdArg: 	[(103@230) dropFilesEvent nil
+	Receiver's instance variables: 
+		outerContext: 	ExternalDropHandler class>>lookupServiceBasedHandler:
+		startpc: 	114
+		numArgs: 	1
+
+
+ExternalDropHandler>>handle:in:dropEvent:
+	Receiver: an ExternalDropHandler
+	Arguments and temporary variables: 
+		dropStream: 	File @ C:\ph\64\OO2-HelloWorld.st
+		pasteUp: 	a WorldMorph(691814656) [world]
+		anEvent: 	[(103@230) dropFilesEvent nil
+	Receiver's instance variables: 
+		action: 	[ :stream | theOne performServiceFor: aFileReference ]
+		type: 	nil
+		extension: 	nil
+
+
+WorldMorph(PasteUpMorph)>>dropFiles:
+	Receiver: a WorldMorph(691814656) [world]
+	Arguments and temporary variables: 
+		anEvent: 	[(103@230) dropFilesEvent nil]
+		numFiles: 	1
+		i: 	1
+		aFileReference: 	File @ C:\ph\64\OO2-HelloWorld.st
+		handler: 	an ExternalDropHandle
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenubarMorph(566729984) a TaskbarMorph(177717248) a Syste...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.29521016617790813 g: 0.29521016617790813 b: 0.29521016617790...etc...
+		extension: 	a MorphExtension (399103232) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.7047898338220919 g: 0.7047898338220919 b: 0.7047898338...etc...
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+
+
+WorldMorph(Morph)>>handleDropFiles:
+	Receiver: a WorldMorph(691814656) [world]
+	Arguments and temporary variables: 
+		anEvent: 	[(103@230) dropFilesEvent nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an THERE_BE_DRAGONS_HERE
+DuplicatedSlotName: Slot #'autor' appeared twice in Respuesta
+28 March 2020 12:54:44.240869 am
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter * VMMaker-CompatibleUserName.1577968628 uuid: d729bf66-2ea7-5a6d-b1eb-fc005785636d Jan  3 2020
+StackToRegisterMappingCogit * VMMaker-CompatibleUserName.1577968628 uuid: d729bf66-2ea7-5a6d-b1eb-fc005785636d Jan  3 2020
+VM: 201911290039-dev-7 admin@MacBook-Pro-de-admin.local:dev/Pharo/git-repos/pharo-vm/repo Date: Thu Nov 28 21:39:57 2019 CommitHash: 9b6bd16d3 Plugins: 201911290039-dev-7 admin@MacBook-Pro-de-admin.local:dev/Pharo/git-repos/pharo-vm/repo
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1134.sha.5173b0271894727189f261cb9eb9beaa3db3f205 (32 Bit)]
+
+[ :other | 
+other name = current name
+	ifTrue: [ DuplicatedSlotName new
+			oldSlot: current;
+			newSlot: other;
+			host: host;
+			signal ] ] in FixedLayout(PointerLayout)>>checkSlotNames
+	Receiver: a FixedLayout
+	Arguments and temporary variables: 
+		slots: 	an OrderedCollection(#texto => InstanceVariableSlot #autor => InstanceVa...etc...
+		other: 	#autor => InstanceVariableSlot
+		current: 	#autor => InstanceVariableSlo
+	Receiver's instance variables: 
+		host: 	Respuesta
+		slotScope: 	a LayoutClassScope(#texto => InstanceVariableSlot #autor => Instance...etc...
+
+
+OrderedCollection>>do:
+	Receiver: an OrderedCollection(#texto => InstanceVariableSlot #autor => InstanceVariableSlot #respue...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :other | 
+other name = current name
+	ifTrue: [ DuplicatedSlotName new...etc...
+		index: 	
+	Receiver's instance variables: 
+		array: 	{#texto => InstanceVariableSlot. #autor => InstanceVariableSlot. #respue...etc...
+		firstIndex: 	1
+		lastIndex: 	4
+
+
+FixedLayout(PointerLayout)>>checkSlotNames
+	Receiver: a FixedLayout
+	Arguments and temporary variables: 
+		slots: 	an OrderedCollection(#texto => InstanceVariableSlot #autor => InstanceVa...etc...
+		current: 	#autor => InstanceVariableSlo
+	Receiver's instance variables: 
+		host: 	Respuesta
+		slotScope: 	a LayoutClassScope(#texto => InstanceVariableSlot #autor => Instance...etc...
+
+
+FixedLayout(PointerLayout)>>checkSanity
+	Receiver: a FixedLayout
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		host: 	Respuesta
+		slotScope: 	a LayoutClassScope(#texto => InstanceVariableSlot #autor => Instance...etc...
+
+
+Respuesta class(ClassDescription)>>superclass:withLayoutType:slots:
+	Receiver: Respuesta
+	Arguments and temporary variables: 
+		aSuperclass: 	Pregunta
+		layoutType: 	FixedLayout
+		slotArray: 	{#texto => InstanceVariableSlot. #autor => InstanceVariableSlot. #pr...etc...
+		superLayout: 	a FixedLayout
+		newScope: 	a LayoutClassScope(#texto => InstanceVariableSlot #autor => InstanceV...etc...
+		newLayout: 	a FixedLayou
+	Receiver's instance variables: 
+		superclass: 	nil
+		methodDict: 	nil
+		format: 	nil
+		layout: 	nil
+		organization: 	nil
+		subclasses: 	nil
+		name: 	#Respuesta
+		classPool: 	nil
+		sharedPools: 	nil
+		environment: 	nil
+		category: 	nil
+
+
+ShDefaultBuilderEnhancer>>configureClass:superclass:withLayoutType:slots:
+	Receiver: a ShDefaultBuilderEnhancer
+	Arguments and temporary variables: 
+		newClass: 	Respuesta
+		superclass: 	Pregunta
+		layoutType: 	FixedLayout
+		slots: 	{#texto => InstanceVariableSlot. #autor => InstanceVariableSlot. #pregun...etc..
+	Receiver's instance variables: 
+a ShDefaultBuilderEnhancer
+
+ShiftClassBuilder>>createClass
+	Receiver: a ShiftClassBuilder
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		buildEnvironment: 	a ShSmalltalkGlobalsEnvironment
+		superclassName: 	#Object
+		name: 	#Respuesta
+		layoutDefinition: 	a ShLayoutDefinition
+		comment: 	nil
+		commentStamp: 	nil
+		superclass: 	Pregunta
+		category: 	'OO2-cuOOraSkeleton'
+		newMetaclass: 	Respuesta class
+		newClass: 	Respuesta
+		oldClass: 	Respuesta
+		oldMetaclass: 	Respuesta class
+		builderEnhancer: 	a ShDefaultBuilderEnhancer
+		metaclassClass: 	nil
+		extensibleProperties: 	a Dictionary()
+		changeComparers: 	an OrderedCollection(ShSharedPoolChangeDetector ShSharedVariab...etc...
+		changes: 	a Set(a ShClassChanged a ShInstanceShapeChanged)
+		metaSuperclass: 	nil
+		superclassResolver: 	a ClassResolverStrictResolve
+
+
+ShiftClassBuilder>>build
+	Receiver: a ShiftClassBuilder
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		buildEnvironment: 	a ShSmalltalkGlobalsEnvironment
+		superclassName: 	#Object
+		name: 	#Respuesta
+		layoutDefinition: 	a ShLayoutDefinition
+		comment: 	nil
+		commentStamp: 	nil
+		superclass: 	Pregunta
+		category: 	'OO2-cuOOraSkeleton'
+		newMetaclass: 	Respuesta class
+		newClass: 	Respuesta
+		oldClass: 	Respuesta
+		oldMetaclass: 	Respuesta class
+		builderEnhancer: 	a ShDefaultBuilderEnhancer
+		metaclassClass: 	nil
+		extensibleProperties: 	a Dictionary()
+		changeComparers: 	an OrderedCollection(ShSharedPoolChangeDetector ShSharedVariab...etc...
+		changes: 	a Set(a ShClassChanged a ShInstanceShapeChanged)
+		metaSuperclass: 	nil
+		superclassResolver: 	a ClassResolverStrictResolve
+
+
+[ builder oldClass: oldClass.
+self copyClassSlotsFromExistingClass.
+newClass := builder build.
+self installInEnvironment: newClass.
+self installSubclassInSuperclass: newClass.
+builder builderEnhancer beforeMigratingClass: builder installer: self.
+builder builderEnhancer migrateToClass: newClass installer: self.
+builder builderEnhancer afterMigratingClass: builder installer: self.
+builder builderEnhancer
+	propagateChangesToRelatedClasses: newClass
+	installer: self ] in ShiftClassInstaller>>make
+	Receiver: a ShiftClassInstaller
+	Arguments and temporary variables: 
+		newClass: 	ni
+	Receiver's instance variables: 
+		oldClass: 	Respuesta
+		builder: 	a ShiftClassBuilder
+		installingEnvironment: 	nil
+
+
+BlockClosure>>on:do:
+	Receiver: [ builder oldClass: oldClass.
+self copyClassSlotsFromExistingClass.
+newClass := builder bu...etc...
+	Arguments and temporary variables: 
+		exception: 	ShNoChangesInClass
+		handlerAction: 	[ "If there are no changes in the building, I am not building or...etc..
+	Receiver's instance variables: 
+		outerContext: 	ShiftClassInstaller>>make
+		startpc: 	100
+		numArgs: 	0
+
+
+ShiftClassInstaller>>make
+	Receiver: a ShiftClassInstaller
+	Arguments and temporary variables: 
+		newClass: 	ni
+	Receiver's instance variables: 
+		oldClass: 	Respuesta
+		builder: 	a ShiftClassBuilder
+		installingEnvironment: 	nil
+
+
+ShiftClassInstaller>>make:
+	Receiver: a ShiftClassInstaller
+	Arguments and temporary variables: 
+		aBlock: 	[ :builder | 
+builder
+	superclass: self;
+	name: t;
+	layoutClass: self c...etc..
+	Receiver's instance variables: 
+		oldClass: 	Respuesta
+		builder: 	a ShiftClassBuilder
+		installingEnvironment: 	nil
+
+
+ShiftClassInstaller class>>make:
+	Receiver: ShiftClassInstaller
+	Arguments and temporary variables: 
+		aBlock: 	[ :builder | 
+builder
+	superclass: self;
+	name: t;
+	layoutClass: self c...etc..
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#builder->ShiftClassInstaller>>#builder #comment...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{ShiftAnonymousClassInstaller}
+		name: 	#ShiftClassInstaller
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Shift-ClassInstaller-Base'
+
+
+Pregunta class(Class)>>subclass:instanceVariableNames:classVariableNames:poolDictionaries:package:
+	Receiver: Pregunta
+	Arguments and temporary variables: 
+		t: 	#Respuesta
+		f: 	'texto autor pregunta votos'
+		d: 	''
+		s: 	''
+		cat: 	'OO2-cuOOraSkeleton
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#agregarRespuesta:->Pregunta>>#agregarRespuesta:...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{PreguntaIG. PreguntaTecnica}
+		name: 	#Pregunta
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'OO2-cuOOraSkeleton'
+
+
+Pregunta class(Class)>>subclass:instanceVariableNames:classVariableNames:package:
+	Receiver: Pregunta
+	Arguments and temporary variables: 
+		aSubclassSymbol: 	#Respuesta
+		instVarNameList: 	'texto autor pregunta votos'
+		classVarNames: 	''
+		aPackageSymbol: 	'OO2-cuOOraSkeleton
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#agregarRespuesta:->Pregunta>>#agregarRespuesta:...etc...
+		format: 	65539
+		layout: 	a FixedLayout
+		organization: 	a ClassOrganization
+		subclasses: 	{PreguntaIG. PreguntaTecnica}
+		name: 	#Pregunta
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'OO2-cuOOraSkeleton'
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Pregunta
+		subclass: #Respuesta
+		instanceVariableNames: 'texto au...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+ClySystemEnvironment>>compileANewClassFrom:notifying:startingFrom:
+	Receiver: a ClySystemEnvironment(current image)
+	Arguments and temporary variables: 
+		aString: 	'Pregunta subclass: #Respuesta
+	instanceVariableNames: ''texto autor p...etc...
+		aController: 	a RubScrolledTextMorph(893451008)
+		aClass: 	Respuesta
+		oldClass: 	Respuesta
+		class: 	nil
+		newClassName: 	'Respuesta'
+		defTokens: 	an OrderedCollection('Pregunta' 'subclass:' '#Respuesta' 'instanceVa...etc...
+		keywdIx: 	2
+		classCompiler: 	an OpalCompile
+	Receiver's instance variables: 
+		name: 	'current image'
+		globals: 	a SystemDictionary(lots of globals)
+		changesAnnouncer: 	a SystemAnnouncer
+		packageOrganizer: 	a RPackageOrganizer
+		projectManager: 	a ClyProjectManagerRegistry
+
+
+ClyFullBrowser>>compileANewClassFrom:notifying:startingFrom:
+	Receiver: a ClyFullBrowser(773350656)
+	Arguments and temporary variables: 
+		aString: 	'Pregunta subclass: #Respuesta
+	instanceVariableNames: ''texto autor p...etc...
+		aController: 	a RubScrolledTextMorph(893451008)
+		aClass: 	Respuest
+	Receiver's instance variables: 
+		bounds: 	(68.0@46.0) corner: (918.0@6THERE_BE_DRAGONS_HERE
+#isTemp was sent to nil
+28 March 2020 12:55:48.409869 am
+
+VM: Win32 - IX86 - 10.0 - CoInterpreter * VMMaker-CompatibleUserName.1577968628 uuid: d729bf66-2ea7-5a6d-b1eb-fc005785636d Jan  3 2020
+StackToRegisterMappingCogit * VMMaker-CompatibleUserName.1577968628 uuid: d729bf66-2ea7-5a6d-b1eb-fc005785636d Jan  3 2020
+VM: 201911290039-dev-7 admin@MacBook-Pro-de-admin.local:dev/Pharo/git-repos/pharo-vm/repo Date: Thu Nov 28 21:39:57 2019 CommitHash: 9b6bd16d3 Plugins: 201911290039-dev-7 admin@MacBook-Pro-de-admin.local:dev/Pharo/git-repos/pharo-vm/repo
+
+Image: Pharo8.0.0 [Build information: Pharo-8.0.0+build.1134.sha.5173b0271894727189f261cb9eb9beaa3db3f205 (32 Bit)]
+
+UndefinedObject(Object)>>doesNotUnderstand: #isTemp
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	isTemp
+		exception: 	MessageNotUnderstood: receiver of "isTemp" is nil
+		resumeValue: 	ni
+	Receiver's instance variables: 
+nil
+
+UndefinedObject>>doesNotUnderstand: #isTemp
+	Receiver: nil
+	Arguments and temporary variables: 
+		aMessage: 	isTemp
+		exception: 	nil
+		resumeValue: 	nil
+		node: 	ni
+	Receiver's instance variables: 
+nil
+
+OCASTSemanticAnalyzer>>visitVariableNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aVariableNode: 	RBVariableNode(Post)
+		var: 	ni
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBVariableNode>>acceptVisitor:
+	Receiver: RBVariableNode(Post)
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyze
+	Receiver's instance variables: 
+		parent: 	RBMessageNode(Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto...etc...
+		properties: 	nil
+		parentheses: 	nil
+		name: 	#Post
+		start: 	1
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBVariableNode(Post
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitMessageNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aMessageNode: 	RBMessageNode(Post
+	subclass: #Respuesta
+	instanceVariableNames: ...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBMessageNode>>acceptVisitor:
+	Receiver: RBMessageNode(Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto autor pregunta vot...etc...
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyze
+	Receiver's instance variables: 
+		parent: 	RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'text...etc...
+		properties: 	nil
+		parentheses: 	nil
+		receiver: 	RBVariableNode(Post)
+		selector: 	#subclass:instanceVariableNames:classVariableNames:package:
+		keywordsPositions: 	an IntegerArray(6 28 81 105)
+		arguments: 	an OrderedCollection(RBLiteralValueNode(#Respuesta) RBLiteralValueNo...etc...
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBMessageNode(Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto ...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitReturnNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aReturnNode: 	RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: ...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBReturnNode>>acceptVisitor:
+	Receiver: RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto autor pregunta vo...etc...
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyze
+	Receiver's instance variables: 
+		parent: 	RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'te...etc...
+		properties: 	nil
+		return: 	0
+		value: 	RBMessageNode(Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto ...etc...
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+[ :each | self visitNode: each ] in OCASTSemanticAnalyzer>>visitSequenceNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aSequenceNode: 	RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNam...etc...
+		each: 	RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto ...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto autor pr...etc...
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | self visitNode: each ]
+		index: 	
+	Receiver's instance variables: 
+an Array(RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto autor pr...etc...
+
+OCASTSemanticAnalyzer>>visitSequenceNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aSequenceNode: 	RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNam...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBSequenceNode>>acceptVisitor:
+	Receiver: RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'texto autor pregunta ...etc...
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyze
+	Receiver's instance variables: 
+		parent: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto aut...etc...
+		properties: 	nil
+		leftBar: 	nil
+		rightBar: 	nil
+		statements: 	an Array(RBReturnNode(^ Post
+	subclass: #Respuesta
+	instanceVariabl...etc...
+		periods: 	#()
+		temporaries: 	#()
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'tex...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer>>visitMethodNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aMethodNode: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'text...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBMethodNode>>acceptVisitor:
+	Receiver: DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor pregunta votos'
+...etc...
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyze
+	Receiver's instance variables: 
+		parent: 	nil
+		properties: 	nil
+		scope: 	an OCMethodScope 4
+		selector: 	#DoIt
+		keywordsPositions: 	nil
+		body: 	RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'text...etc...
+		source: 	nil
+		arguments: 	#()
+		pragmas: 	nil
+		replacements: 	a SortedCollection()
+		nodeReplacements: 	an IdentityDictionary()
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto auto...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer>>analyze:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto auto...etc..
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 4
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBMethodNode>>doSemanticAnalysis
+	Receiver: DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor pregunta votos'
+...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		parent: 	nil
+		properties: 	nil
+		scope: 	an OCMethodScope 4
+		selector: 	#DoIt
+		keywordsPositions: 	nil
+		body: 	RBSequenceNode(^ Post
+	subclass: #Respuesta
+	instanceVariableNames: 'text...etc...
+		source: 	nil
+		arguments: 	#()
+		pragmas: 	nil
+		replacements: 	a SortedCollection()
+		nodeReplacements: 	an IdentityDictionary()
+		compilationContext: 	a CompilationContext
+
+
+[ ast doSemanticAnalysis ] in OpalCompiler>>doSemanticAnalysis
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+BlockClosure>>on:do:
+	Receiver: [ ast doSemanticAnalysis ]
+	Arguments and temporary variables: 
+		exception: 	OCSemanticError
+		handlerAction: 	[ :ex | 
+ex defaultAction.
+^ self compilationContext failBlock v...etc..
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>doSemanticAnalysis
+		startpc: 	41
+		numArgs: 	0
+
+
+OpalCompiler>>doSemanticAnalysis
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+[ self parse.
+self transformDoit.
+self doSemanticAnalysis.
+self callPlugins ] in [ [ self parse.
+self transformDoit.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: ReparseAfterSourceEditing
+	do: [ :notification | 
+		self source: notification newSource.
+		notification retry ].
+cm := compilationContext optionEmbeddSources
+	ifTrue: [ ast generateWithSource ]
+	ifFalse: [ ast generate: self compilationContext compiledMethodTrailer ] ] in OpalCompiler>>compile
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		cm: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+BlockClosure>>on:do:
+	Receiver: [ self parse.
+self transformDoit.
+self doSemanticAnalysis.
+self callPlugins ]
+	Arguments and temporary variables: 
+		exception: 	ReparseAfterSourceEditing
+		handlerAction: 	[ :notification | 
+self source: notification newSource.
+notifica...etc..
+	Receiver's instance variables: 
+		outerContext: 	[ [ self parse.
+self transformDoit.
+self doSemanticAnalysis.
+self...etc...
+		startpc: 	129
+		numArgs: 	0
+
+
+[ [ self parse.
+self transformDoit.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: ReparseAfterSourceEditing
+	do: [ :notification | 
+		self source: notification newSource.
+		notification retry ].
+cm := compilationContext optionEmbeddSources
+	ifTrue: [ ast generateWithSource ]
+	ifFalse: [ ast generate: self compilationContext compiledMethodTrailer ] ] in OpalCompiler>>compile
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		cm: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+BlockClosure>>on:do:
+	Receiver: [ [ self parse.
+self transformDoit.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: Repar...etc...
+	Arguments and temporary variables: 
+		exception: 	SyntaxErrorNotification
+		handlerAction: 	[ :exception | 
+self compilationContext requestor
+	ifNotNil: [ s...etc..
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>compile
+		startpc: 	125
+		numArgs: 	0
+
+
+OpalCompiler>>compile
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		cm: 	ni
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Post
+		subclass: #Respuesta
+		instanceVariableNames: 'texto autor ...etc...
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
